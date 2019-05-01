@@ -8,7 +8,7 @@ before_install:
 
 
 script:
-  - docker run web npm run test -- --coverage
+  - docker run web npm test
 
 
 deploy:
