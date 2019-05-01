@@ -8,7 +8,7 @@ before_install:
 
 
 script:
-  - docker run web CI=true npm test
+  - docker run -e CI=true web npm test -- --watchAll=false
 
 
 deploy:
